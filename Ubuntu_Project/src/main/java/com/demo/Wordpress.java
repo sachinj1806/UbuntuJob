@@ -2,6 +2,7 @@ package com.demo;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,8 +15,8 @@ public class Wordpress {
 	@BeforeMethod
 	public void setUp() throws Exception {
 
-		System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
-		driver = new FirefoxDriver();		
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		driver = new ChromeDriver();		
 		driver.get("https://wordpress.com/log-in");
 		driver.findElement(By.name("usernameOrEmail")).sendKeys("jsachinj");		
 		driver.findElement(By.name("password")).sendKeys("sears@123");
