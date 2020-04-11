@@ -15,7 +15,7 @@ public class Wordpress {
 	@BeforeMethod
 	public void setUp() throws Exception {
 
-		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
 		driver = new ChromeDriver();		
 		driver.get("https://wordpress.com/log-in");
 		driver.findElement(By.name("usernameOrEmail")).sendKeys("jsachinj");		
