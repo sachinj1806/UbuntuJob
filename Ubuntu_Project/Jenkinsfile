@@ -1,16 +1,10 @@
 node{
-
  stage('SCM Checkout'){ 
    git 'https://github.com/sachinj1806/UbuntuJob' 
     }
  stage('Compile-Package'){
-  sh 'mvn test'
- 
- 
+  //get maven home path
+  def mvnHome=tool name: 'maven', type: 'maven'
+  sh '${mvnHome}/bin/mvn test' 
  }
-
-
-
-
-
 }
