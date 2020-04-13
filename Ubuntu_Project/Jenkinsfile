@@ -1,5 +1,4 @@
-node{
-  agent any
+node{ 
  stage('SCM Checkout'){ 
    git 'https://github.com/sachinj1806/UbuntuJob' 
     }
@@ -9,6 +8,6 @@ node{
  // sh '${mvnHome}/bin/mvn test' 
  //bat '${mvnHome}/bin/mvn test' 
   //bat label: '', script: tool name: 'maven', type: 'maven'/bin/mvn test'
-  bat 'mvn test'
+  bat 'mvn clean test'
  }
 }
