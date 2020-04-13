@@ -2,7 +2,7 @@
 <suite name="Knorrium.info - Wordpress Demo" verbose="10">
 	<test name="Write new post" preserve-order="true">
 		<classes>
-			<class name="src.main.java.com.demo.Wordpress">
+			<class name="com.demo.Wordpress">
 			</class>
 		</classes>
 	</test> 
