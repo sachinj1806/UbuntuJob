@@ -1,5 +1,5 @@
 node{
-  label 'windows_node'
+  agent any
  stage('SCM Checkout'){ 
    git 'https://github.com/sachinj1806/UbuntuJob' 
     }
