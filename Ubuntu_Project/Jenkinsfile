@@ -8,6 +8,6 @@ node{
  // sh '${mvnHome}/bin/mvn test' 
  //bat '${mvnHome}/bin/mvn test' 
   //bat label: '', script: tool name: 'maven', type: 'maven'/bin/mvn test'
-  bat 'mvn clean test'
+  bat 'mvn test'
  }
 }
