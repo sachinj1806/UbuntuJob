@@ -1,0 +1,16 @@
+node{
+
+ stage('SCM Checkout'){ 
+   git 'https://github.com/sachinj1806/UbuntuJob' 
+    }
+ stage('Compile-Package'){
+  sh 'mvn test'
+ 
+ 
+ }
+
+
+
+
+
+}
