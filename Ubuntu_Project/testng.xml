@@ -5,5 +5,5 @@
 			<class name="com.demo.GeckoDriver_Demo">
 			</class>
 		</classes>
-	</test>
+	</test> 
 </suite>
