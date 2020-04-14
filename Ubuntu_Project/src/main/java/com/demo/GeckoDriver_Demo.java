@@ -16,6 +16,7 @@ public class GeckoDriver_Demo {
 
 		driver.get("http://www.google.com");
 		driver.findElement(By.name("q")).sendKeys("sachin geck driver");
+		System.out.println("*********** inside GeckoDriver_Demo class ************* ");
 		Thread.sleep(5000);
 		driver.close();
 	}
