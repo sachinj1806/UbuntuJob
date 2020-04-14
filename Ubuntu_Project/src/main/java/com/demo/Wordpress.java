@@ -14,7 +14,7 @@ public class Wordpress {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-
+                System.out.println("*********** inside GeckoDriver_Demo class ************* ");
 		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
 		driver = new ChromeDriver();		
 		driver.get("https://wordpress.com/log-in");
